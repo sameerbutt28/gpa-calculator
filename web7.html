@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web7.css">
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <div class="input-container">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Enter subject">
+        </div>
+        <div class="input-container">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" placeholder="Enter grade">
+        </div>
+        <button id="add-course">Add Course</button>
+        <div class="courses">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="course-list">
+                </tbody>
+            </table>
+        </div>
+        <div class="result">
+            <h2>GPA: <span id="gpa">0.00</span></h2>
+        </div>
+    </div>
+    <script src="web7.js"></script>
+</body>
+</html>
